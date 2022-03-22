@@ -11,6 +11,7 @@ void main(){
         //home: LoginScreen(),
         //home: CreateAcc(),
         home: SelectMethod(),
+        //home: DeviceUpload(),
       )
   );
 }
