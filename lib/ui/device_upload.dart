@@ -37,139 +37,11 @@ class DeviceUpload extends StatelessWidget {
               alignment: Alignment.center,
               child: Text("All Files", style: TextStyle(fontSize: 20)),
             ),
-            Container(
-              height: 50, width: 140,
-              alignment: Alignment.center,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: <Widget>[
-                  Container(
-                    height: 50, width: 50,
-                    alignment: Alignment.centerLeft,
-                    child: Icon(Icons.file_copy, color: Colors.black, size:35,
-                    ),
-                  ),
-                  Container(
-                    alignment: Alignment.centerLeft,
-                    child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: <Widget>[
-                          Container(
-                            child: Text("Mobile Computing Module 1.pdf", style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold)
-                            )
-                          ),
-                          Container(
-                            alignment: Alignment.bottomLeft,
-                          child: Text("/storage/emulated/0/Documents", style: TextStyle(fontSize: 13, fontWeight: FontWeight.w300)
-                        ),
-                      ),
-                    ],
-                   ),
-                  ),
-                ],
-              ),
-            ),
-            Container(
-              height: 50, width: 140,
-              alignment: Alignment.center,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: <Widget>[
-                  Container(
-                    height: 50, width: 50,
-                    alignment: Alignment.centerLeft,
-                    child: Icon(Icons.file_copy, color: Colors.black, size:35,
-                    ),
-                  ),
-                  Container(
-                    alignment: Alignment.centerLeft,
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: <Widget>[
-                        Container(
-                            child: Text("Mobile Computing Module 2.pdf", style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold)
-                            )
-                        ),
-                        Container(
-                          alignment: Alignment.bottomLeft,
-                          child: Text("/storage/emulated/0/Documents", style: TextStyle(fontSize: 13, fontWeight: FontWeight.w300)
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            Container(
-              height: 50, width: 140,
-              alignment: Alignment.center,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: <Widget>[
-                  Container(
-                    height: 50, width: 50,
-                    alignment: Alignment.centerLeft,
-                    child: Icon(Icons.file_copy, color: Colors.black, size:35,
-                    ),
-                  ),
-                  Container(
-                    alignment: Alignment.centerLeft,
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: <Widget>[
-                        Container(
-                            child: Text("Lecture 1 - Quality Assurance.pdf", style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold)
-                            )
-                        ),
-                        Container(
-                          alignment: Alignment.bottomLeft,
-                          child: Text("/storage/emulated/0/Documents", style: TextStyle(fontSize: 13, fontWeight: FontWeight.w300)
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            Container(
-              height: 50, width: 140,
-              alignment: Alignment.center,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: <Widget>[
-                  Container(
-                    height: 50, width: 50,
-                    alignment: Alignment.centerLeft,
-                    child: Icon(Icons.file_copy, color: Colors.black, size:35,
-                    ),
-                  ),
-                  Container(
-                    alignment: Alignment.centerLeft,
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: <Widget>[
-                        Container(
-                            child: Text("DRRR Module 2.pdf", style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold)
-                            )
-                        ),
-                        Container(
-                          alignment: Alignment.bottomLeft,
-                          child: Text("/storage/emulated/0/Documents", style: TextStyle(fontSize: 13, fontWeight: FontWeight.w300)
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            SizedBox(height: 200),
+            SizedBox(height: 400),
             Container(
               //height: 35,
                 width: 0,
-                padding: const EdgeInsets.fromLTRB(100, 10, 100, 10),
+                padding: const EdgeInsets.fromLTRB(50, 10, 50, 10),
                 child: ElevatedButton(
                   child: Text("Upload File"),
                   style: ElevatedButton.styleFrom(
@@ -179,8 +51,8 @@ class DeviceUpload extends StatelessWidget {
                   onPressed:() {
                     print(nameController.text);
                     print(passwordController.text);
-                },
-              )
+                  },
+                )
             ),
           ],
         ),
