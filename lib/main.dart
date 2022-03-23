@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:trial/ui/view_module.dart';
 import './ui/login.dart';
 import 'ui/create_account.dart';
 import 'ui/select_method.dart';
@@ -14,9 +15,10 @@ void main(){
         //home: LoginScreen(),
         //home: CreateAcc(),
         //home: SelectMethod(),
-        home: DeviceUpload(),
+        //home: DeviceUpload(),
         //home: GdriveUpload(),
         //home:ChooseFile(),
+        home: ViewModule(),
       )
   );
 }
