@@ -3,6 +3,8 @@ import './ui/login.dart';
 import 'ui/create_account.dart';
 import 'ui/select_method.dart';
 import 'ui/device_upload.dart';
+import 'ui/gdrive_upload.dart';
+import 'ui/choose_file.dart';
 
 void main(){
   runApp(
@@ -13,7 +15,8 @@ void main(){
         //home: CreateAcc(),
         //home: SelectMethod(),
         home: DeviceUpload(),
-        //home: UploadFromLocal(),
+        //home: GdriveUpload(), //WIP
+        //home:ChooseFile(),
       )
   );
 }
