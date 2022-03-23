@@ -14,8 +14,8 @@ void main(){
         //home: LoginScreen(),
         //home: CreateAcc(),
         //home: SelectMethod(),
-        //home: DeviceUpload(),
-        home: GdriveUpload(),
+        home: DeviceUpload(),
+        //home: GdriveUpload(),
         //home:ChooseFile(),
       )
   );
