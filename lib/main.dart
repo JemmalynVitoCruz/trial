@@ -6,6 +6,7 @@ import 'ui/select_method.dart';
 import 'ui/device_upload.dart';
 import 'ui/gdrive_upload.dart';
 import 'ui/choose_file.dart';
+import 'ui/local_files.dart';
 
 void main(){
   runApp(
@@ -18,7 +19,8 @@ void main(){
         //home: DeviceUpload(),
         //home: GdriveUpload(),
         //home:ChooseFile(),
-        home: ViewModule(),
+        //home: ViewModule(),
+        home: LocalFiles(),
       )
   );
 }

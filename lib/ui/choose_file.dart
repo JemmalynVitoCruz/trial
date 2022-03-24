@@ -36,10 +36,9 @@ class ChooseFile extends StatelessWidget {
                       ],
                     ),
               ),
-                  Container(
-                    width: 60,
-                    height: 1200,
-                    color: Colors.grey[50],
+                  Padding(
+                    padding: const EdgeInsets.only(left: 0.0, right: 50.0, top: 0.0, bottom: 0.0,
+                    ),
                   ),
                   Container(
                     width: 150,
@@ -62,7 +61,7 @@ class ChooseFile extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
                 Container(
-                  width: 140,
+                  width: 130,
                   height: 50,
                   child: Align(alignment: Alignment.center,
                   child: Text("Local files", style: TextStyle(fontSize: 15),),
