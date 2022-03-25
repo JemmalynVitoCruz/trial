@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class ViewModule extends StatelessWidget {
+class ApprovedNotif extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.brown[400],
+        backgroundColor: Colors.black,
         leading: IconButton(
           icon: Icon(Icons.arrow_back, color: Colors.white),
           onPressed: () => Navigator.of(context).pop(),
@@ -16,7 +16,7 @@ class ViewModule extends StatelessWidget {
           Padding(
             padding: EdgeInsets.only(right: 20.0),
             child: Icon(
-              Icons.notifications_none_outlined,
+              Icons.notifications,
               size: 26.0,
             ),
           ),
@@ -36,7 +36,7 @@ class ViewModule extends StatelessWidget {
             SizedBox(height: 10),
             Container (
               height: 30, width: 30,
-              color: Colors.brown[900],
+              color: Colors.black,
               child: Text("1/20", style: TextStyle(fontSize: 15, color: Colors.white)),
             ),
             Container(

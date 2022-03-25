@@ -8,7 +8,7 @@ class DeviceUpload extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.brown[400],
         leading: IconButton(
           icon: Icon(Icons.arrow_back, color: Colors.white),
           onPressed: () => Navigator.of(context).pop(),
@@ -32,34 +32,35 @@ class DeviceUpload extends StatelessWidget {
             Container(
               //padding: const EdgeInsets.fromLTRB(0, 20, 0, 10),
               width: 40, height: 40,
-              color: Colors.grey,
+              color: Colors.brown[500],
               alignment: Alignment.center,
-                child: Text("All Files", style: TextStyle(fontSize: 20)),
+              child: Text("All Files", style: TextStyle(fontSize: 20, color: Colors.white)),
             ),
+            SizedBox(height: 20),
             Container(
               height: 50, width: 140,
               alignment: Alignment.center,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: <Widget>[
-                    Container(
-                      height: 50, width: 50,
-                      alignment: Alignment.centerLeft,
-                        child: Icon(Icons.file_copy, color: Colors.black, size:35,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: <Widget>[
+                  Container(
+                    height: 50, width: 50,
+                    alignment: Alignment.centerLeft,
+                    child: Icon(Icons.file_copy, color: Colors.black, size:35,
+                    ),
+                  ),
+                  Container(
+                    alignment: Alignment.centerLeft,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Container(
+                            child: Text("Mobile Computing Module 1.pdf", style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold)
+                            )
                         ),
-                      ),
-                    Container(
-                      alignment: Alignment.centerLeft,
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: <Widget>[
-                         Container(
-                          child: Text("Mobile Computing Module 1.pdf", style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold)
-                          )
-                        ),
-                      Container(
-                        alignment: Alignment.bottomLeft,
-                         child: Text("/storage/emulated/0/Documents", style: TextStyle(fontSize: 13, fontWeight: FontWeight.w300)
+                        Container(
+                          alignment: Alignment.bottomLeft,
+                          child: Text("/storage/emulated/0/Documents", style: TextStyle(fontSize: 13, fontWeight: FontWeight.w300)
                           ),
                         ),
                       ],
@@ -78,34 +79,34 @@ class DeviceUpload extends StatelessWidget {
             Container(
               height: 50, width: 140,
               alignment: Alignment.center,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: <Widget>[
-                    Container(
-                      height: 50, width: 50,
-                      alignment: Alignment.centerLeft,
-                        child: Icon(Icons.file_copy, color: Colors.black, size:35,
-                        ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: <Widget>[
+                  Container(
+                    height: 50, width: 50,
+                    alignment: Alignment.centerLeft,
+                    child: Icon(Icons.file_copy, color: Colors.black, size:35,
                     ),
-                    Container(
-                      alignment: Alignment.centerLeft,
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: <Widget>[
-                            Container(
-                                child: Text("Mobile Computing Module 2.pdf", style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold)
-                                )
-                              ),
-                            Container(
-                              alignment: Alignment.bottomLeft,
-                              child: Text("/storage/emulated/0/Documents", style: TextStyle(fontSize: 13, fontWeight: FontWeight.w300)
-                              ),
-                            ),
-                          ],
+                  ),
+                  Container(
+                    alignment: Alignment.centerLeft,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Container(
+                            child: Text("Mobile Computing Module 2.pdf", style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold)
+                            )
                         ),
+                        Container(
+                          alignment: Alignment.bottomLeft,
+                          child: Text("/storage/emulated/0/Documents", style: TextStyle(fontSize: 13, fontWeight: FontWeight.w300)
+                          ),
+                        ),
+                      ],
                     ),
-                  ],
-                ),
+                  ),
+                ],
+              ),
             ),
             Container(
               decoration: BoxDecoration(
@@ -166,18 +167,18 @@ class DeviceUpload extends StatelessWidget {
                   ),
                   Container(alignment: Alignment.centerLeft,
                     child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      Container(
-                          child: Text("DRRR Module 2.pdf", style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold)
-                          )
-                      ),
-                      Container(
-                        alignment: Alignment.bottomLeft,
-                        child: Text("/storage/emulated/0/Documents", style: TextStyle(fontSize: 13, fontWeight: FontWeight.w300)
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Container(
+                            child: Text("DRRR Module 2.pdf", style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold)
+                            )
                         ),
-                      ),
-                    ],
+                        Container(
+                          alignment: Alignment.bottomLeft,
+                          child: Text("/storage/emulated/0/Documents", style: TextStyle(fontSize: 13, fontWeight: FontWeight.w300)
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                 ],
@@ -197,13 +198,13 @@ class DeviceUpload extends StatelessWidget {
                 child: ElevatedButton(
                   child: Text("Upload File"),
                   style: ElevatedButton.styleFrom(
-                    onPrimary: Colors.black87,
-                    primary: Colors.grey,
+                    onPrimary: Colors.white,
+                    primary: Color(0xFF3E2723),
                   ),
                   onPressed:() {
                     print(nameController.text);
                     print(passwordController.text);
-                    },
+                  },
                 )
             )
           ],

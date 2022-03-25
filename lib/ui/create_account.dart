@@ -8,7 +8,7 @@ class CreateAcc extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.brown[400],
       ),
       body: Padding(
         padding: EdgeInsets.all(80),
@@ -19,6 +19,7 @@ class CreateAcc extends StatelessWidget {
                 "Create your eSkwela Account",
                 textAlign: TextAlign.center,
                 style: TextStyle(
+                  color: Colors.brown[800],
                   fontWeight: FontWeight.w800,
                   fontSize: 18,
                 ),
@@ -29,7 +30,7 @@ class CreateAcc extends StatelessWidget {
               child: TextField(
                 decoration: InputDecoration(
                   filled: true,
-                  fillColor: Colors.grey,
+                  fillColor: Colors.brown[100],
                   hintText: "First Name",
                 ),
               ),
@@ -39,7 +40,7 @@ class CreateAcc extends StatelessWidget {
               child: TextField(
                 decoration: InputDecoration(
                   filled: true,
-                  fillColor: Colors.grey,
+                  fillColor: Colors.brown[100],
                   hintText: "Last Name",
                 ),
               ),
@@ -49,7 +50,7 @@ class CreateAcc extends StatelessWidget {
               child: TextField(
                 decoration: InputDecoration(
                   filled: true,
-                  fillColor: Colors.grey,
+                  fillColor: Colors.brown[100],
                   hintText: "Email",
                 ),
               ),
@@ -59,11 +60,12 @@ class CreateAcc extends StatelessWidget {
               child: TextField(
                 decoration: InputDecoration(
                   filled: true,
-                  fillColor: Colors.grey,
+                  fillColor: Colors.brown[100],
                   hintText: "Password",
                 ),
               ),
             ),
+            SizedBox(height: 10),
             Container(
                 height: 50,
                 padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
@@ -71,7 +73,7 @@ class CreateAcc extends StatelessWidget {
                   child: Text("Sign In"),
                   style: ElevatedButton.styleFrom(
                     onPrimary: Colors.white,
-                    primary: Colors.black87,
+                    primary: Colors.brown[900],
                   ),
                   onPressed:() {
                     print(nameController.text);

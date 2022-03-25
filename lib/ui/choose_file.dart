@@ -8,7 +8,7 @@ class ChooseFile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.brown[400],
         title: Text('Choose File'),
       ),
         body: Padding (
@@ -25,13 +25,13 @@ class ChooseFile extends StatelessWidget {
                   Container(
                     width: 150,
                     height: 200,
-                    color: Colors.grey[300],
+                    color: Colors.brown[50],
                     alignment: Alignment.centerLeft,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Container(
-                          child: Icon(Icons.folder, color: Colors.black, size:80,),
+                          child: Icon(Icons.folder, color: Colors.brown[900], size:80,),
                         ),
                       ],
                     ),
@@ -43,13 +43,13 @@ class ChooseFile extends StatelessWidget {
                   Container(
                     width: 150,
                     height: 200,
-                    color: Colors.grey[300],
+                    color: Colors.brown[50],
                     alignment: Alignment.centerLeft,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Container(
-                          child: Icon(Icons.people_outlined, color: Colors.black, size:80,),
+                          child: Icon(Icons.people_outlined, color: Colors.brown[900], size:80,),
                         ),
                       ],
                     ),
@@ -64,14 +64,14 @@ class ChooseFile extends StatelessWidget {
                   width: 130,
                   height: 50,
                   child: Align(alignment: Alignment.center,
-                  child: Text("Local files", style: TextStyle(fontSize: 15),),
+                  child: Text("Local files", style: TextStyle(fontSize: 15,color: Colors.brown[700], fontWeight: FontWeight.bold),),
                  ),
                 ),
                 Container(
                   width: 190,
                   height: 50,
                   child: Align(alignment: Alignment.centerRight,
-                    child: Text("Shared files", style: TextStyle(fontSize: 15),),
+                    child: Text("Shared files", style: TextStyle(fontSize: 15,color: Colors.brown[700], fontWeight: FontWeight.bold),),
                   ),
                 ),
               ],
@@ -80,7 +80,7 @@ class ChooseFile extends StatelessWidget {
           ),
          ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.brown[900],
         child: Icon(Icons.add),
         onPressed: () => debugPrint("Add Floating Button Tapped!"),
         tooltip: 'Add Button Tooltip',
