@@ -75,7 +75,7 @@ class NewNotification extends StatelessWidget {
                             children: const <Widget>[
                               Icon(
                                 Icons.toggle_on,
-                                color: Colors.black,
+                                color: Colors.brown,
                                 size:30,
                               ),
                               Flexible(
@@ -116,7 +116,7 @@ class NewNotification extends StatelessWidget {
                             children: const <Widget>[
                               Icon(
                                 Icons.toggle_on,
-                                color: Colors.black,
+                                color: Colors.brown,
                                 size:30,
                               ),
                               Flexible(
