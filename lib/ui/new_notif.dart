@@ -105,7 +105,7 @@ class NewNotification extends StatelessWidget {
                       alignment: Alignment.topLeft,
                         decoration: BoxDecoration(
                           shape: BoxShape.rectangle,
-                          color: Colors.grey,
+                          color: Colors.brown[100],
                           border: Border.all(
                             color: Colors.brown,
                             width:2,
