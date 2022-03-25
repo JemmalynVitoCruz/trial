@@ -13,30 +13,29 @@ class NewNotification extends StatelessWidget {
         ),
         title: Text('DRRR Module 2. pdf', style: TextStyle(fontStyle: FontStyle.normal),),
         actions: <Widget>[
-          Padding(
-            padding: EdgeInsets.only(right: 20.0),
-            child: Icon(
-              Icons.notifications_none_outlined,
-              size: 26.0,
-            ),
+          Row(
+            children: <Widget> [
+              IconButton(
+                onPressed: () => Navigator.of(context).pop(),
+                icon: Stack(
+                children: <Widget>[
+                  Icon(Icons.notifications,
+                    color: Colors.white,),
+                    Positioned(
+                      child: Icon(Icons.brightness_1,
+                      color: Colors.red,
+                      size: 9.0,),
+                    ),
+              ],
           ),
+        )
+      ],
+      ),
           Padding(
             padding: EdgeInsets.only(right: 20.0),
             child: Icon(
               IconData(0xf8dc, fontFamily: 'MaterialIcons'),
             ),
-          ),
-          Container(
-            decoration: new BoxDecoration(color: Colors.red, borderRadius: BorderRadius.circular(7),),
-              constraints: BoxConstraints(
-                minWidth: 10,
-                minHeight: 10,
-            ),
-              child: Container(
-                width: 1,
-                height: 1,
-            ),
-
           ),
         ],
       ),
