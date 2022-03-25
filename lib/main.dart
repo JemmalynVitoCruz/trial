@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:trial/ui/approved_notif.dart';
+import 'package:trial/ui/new_notif.dart';
 import 'package:trial/ui/select_file.dart';
 import 'package:trial/ui/view_module.dart';
 import 'package:trial/ui/view_module_icons.dart';
@@ -22,11 +24,11 @@ void main(){
         //home: GdriveUpload(),
         //home:ChooseFile(),
         //home: ViewModule(),
-        home:ViewModuleIcons(),
+        //home:ViewModuleIcons(),
         //home: LocalFiles(),
         //home: SelectFile(),
         //home: NewNotification(),
-        //home: ApprovedNotif(),
+        home: ApprovedNotif(),
       )
   );
 }

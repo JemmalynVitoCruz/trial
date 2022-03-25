@@ -6,7 +6,7 @@ class NewNotification extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.brown[400],
         leading: IconButton(
           icon: Icon(Icons.arrow_back, color: Colors.white),
           onPressed: () => Navigator.of(context).pop(),
@@ -46,7 +46,7 @@ class NewNotification extends StatelessWidget {
             SizedBox(height: 10),
             Container (
               height: 30, width: 30,
-              color: Colors.black,
+              color: Colors.brown[900],
               child: Text("1/20", style: TextStyle(fontSize: 15, color: Colors.white)),
             ),
             Container(

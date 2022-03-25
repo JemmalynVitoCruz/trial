@@ -9,7 +9,7 @@ class SelectMethod extends StatelessWidget {
         backgroundColor: Colors.white,
         appBar: AppBar(
           title: const Text("Add File"),
-          backgroundColor: Colors.black,
+          backgroundColor: Colors.brown[400],
           titleTextStyle: const TextStyle(
             fontSize: 18,
             color: Colors.white,
@@ -24,7 +24,7 @@ class SelectMethod extends StatelessWidget {
           ) ,
         ),
         body: Padding(
-          padding: const EdgeInsets.all(60),
+          padding: const EdgeInsets.all(50),
           child: ListView(
               children: <Widget>[
                 Container(
@@ -45,8 +45,8 @@ class SelectMethod extends StatelessWidget {
                     padding: const EdgeInsets.fromLTRB(30, 30, 30, 0),
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                          primary: Colors.grey,
-                          onPrimary: Colors.black,
+                          primary: Colors.brown[50],
+                          onPrimary: Colors.brown[700],
                           textStyle: const TextStyle(
                               fontSize: 15,
                               fontWeight: FontWeight.bold)),
@@ -61,8 +61,8 @@ class SelectMethod extends StatelessWidget {
                     padding: const EdgeInsets.fromLTRB(30, 15, 30, 15),
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                          primary: Colors.grey,
-                          onPrimary: Colors.black,
+                          primary: Colors.brown[50],
+                          onPrimary: Colors.brown[700],
                           textStyle: const TextStyle(
                               fontSize: 15,
                               fontWeight: FontWeight.bold)),
@@ -72,11 +72,6 @@ class SelectMethod extends StatelessWidget {
                       },
                     )
                 ),
-
-
-
-
-
               ]
           ),
         ));
