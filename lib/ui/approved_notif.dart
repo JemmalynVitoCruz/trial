@@ -45,7 +45,6 @@ class ApprovedNotif extends StatelessWidget {
                 children: <Widget>[
                   Container(
                       decoration:  const BoxDecoration(color: Colors.white),
-                      height: 320,
                       child: Image.asset('images/module1a.jpg',fit: BoxFit.fill)
                   ),
                   Positioned(
@@ -79,7 +78,6 @@ class ApprovedNotif extends StatelessWidget {
               ),
               Container(
                   decoration: const BoxDecoration(color: Colors.white),
-                  height: 570,
                   child: Image.asset('images/module1b.jpg',fit: BoxFit.fill)
               ),
             ],
