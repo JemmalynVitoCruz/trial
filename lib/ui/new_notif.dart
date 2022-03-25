@@ -39,7 +39,6 @@ class NewNotification extends StatelessWidget {
           ),
         ],
       ),
-
       body: Padding (
         padding: EdgeInsets.all(15),
         child: ListView (
