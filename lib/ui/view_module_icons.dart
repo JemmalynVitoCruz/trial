@@ -43,10 +43,41 @@ class ViewModuleIcons extends StatelessWidget {
                   color: Colors.black,
                 ),
               ),
-              Container(
-                  decoration:  const BoxDecoration(color: Colors.white),
-                  height: 320,
-                  child: Image.asset('images/module1.png',fit: BoxFit.fill)
+              Stack(
+                children: <Widget>[
+                  Container(
+                      decoration:  const BoxDecoration(color: Colors.white),
+                      height: 320,
+                      child: Image.asset('images/module1.png',fit: BoxFit.fill)
+                  ),
+                  Positioned(
+                    right: 0, top: 0,
+                    child: Container(
+                      height: 70,
+                      width: 50,
+                      color: Colors.grey,
+                      child: Icon(Icons.favorite, color: Colors.blue, size:30,),
+                   ),
+                  ),
+                  Positioned(
+                    right: 0, top: 60,
+                    child: Container(
+                      height: 70,
+                      width: 50,
+                      color: Colors.grey,
+                      child: Icon(Icons.star, color: Colors.blue, size:30,),
+                    ),
+                  ),
+                  Positioned(
+                    right: 0, top: 120,
+                    child: Container(
+                      height: 70,
+                      width: 50,
+                      color: Colors.grey,
+                      child: Icon(Icons.person, color: Colors.blue, size:30,),
+                    ),
+                  ),
+                ],
               ),
               Container(
                   decoration: const BoxDecoration(color: Colors.white),
@@ -55,7 +86,6 @@ class ViewModuleIcons extends StatelessWidget {
               ),
             ],
           )
-
       ),
     );
   }
