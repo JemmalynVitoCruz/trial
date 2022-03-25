@@ -14,7 +14,7 @@ class _LoginScreenState extends State<LoginScreen> {
     return Scaffold(
         backgroundColor: Colors.white,
         appBar: AppBar(
-          backgroundColor: Colors.black,
+          backgroundColor: Colors.brown[400],
           titleTextStyle: const TextStyle(
             fontSize: 18,
             color: Colors.white,
@@ -40,9 +40,10 @@ class _LoginScreenState extends State<LoginScreen> {
                   padding: const EdgeInsets.fromLTRB(25, 15, 25, 0),
                   decoration: BoxDecoration(
                     shape: BoxShape.rectangle,
-                    color: Colors.white,
+                    color: Colors.brown[100],
                     border: Border.all(
-                      width:5,
+                      color: Colors.brown,
+                      width:3,
                     ),
                   ),
                     child: Column(
@@ -50,7 +51,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         Text(
                           'eSkwela',
                           style: TextStyle(
-                            color: Colors.black,
+                            color: Colors.white,
                             fontSize: 30,
                             height: 1,
                             fontWeight: FontWeight.w500,
@@ -59,7 +60,8 @@ class _LoginScreenState extends State<LoginScreen> {
                           Text(
                             'Online module reviewer',
                             style: TextStyle(
-                              color: Colors.black,
+                              color: Colors.brown,
+                              fontWeight: FontWeight.bold,
                               fontSize: 10,
                               height: 1.5,
                             ),
@@ -76,9 +78,10 @@ class _LoginScreenState extends State<LoginScreen> {
                     controller: nameController,
                     style: const TextStyle(color: Colors.black),
                     decoration: const InputDecoration(
-                      fillColor: Colors.grey,
+                      fillColor: Color(0xFFEFEBE9),
                       filled: true,
                       hintText: 'Email',
+                      hintStyle: TextStyle(fontSize: 15.0, color: Color(0xFF3E2723)),
                     ),
                   ),
                 ),
@@ -88,9 +91,10 @@ class _LoginScreenState extends State<LoginScreen> {
                     controller: nameController,
                     style: const TextStyle(color: Colors.black),
                     decoration: const InputDecoration(
-                      fillColor: Colors.grey,
+                      fillColor: Color(0xFFEFEBE9),
                       filled: true,
                       hintText: 'Password',
+                      hintStyle: TextStyle(fontSize: 15.0, color: Color(0xFF3E2723)),
                     ),
                   ),
                 ),
@@ -99,7 +103,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     padding: const EdgeInsets.fromLTRB(80, 10, 80, 0),
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                          primary: Colors.black,
+                          primary: Color(0xFF3E2723),
                           textStyle: const TextStyle(
                               fontSize: 14,
                               fontWeight: FontWeight.bold)),
@@ -114,7 +118,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     child: const Text(
                       'or',
                       style: TextStyle(
-                        color: Colors.black,
+                        color: Color(0xFF3E2723),
                         fontSize: 10,
                         fontWeight: FontWeight.w500,
                       ),
@@ -126,7 +130,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     padding: const EdgeInsets.fromLTRB(65, 10, 65, 0),
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                          primary: Colors.black54,
+                          primary: Color(0xFF6D4C41),
                           textStyle: const TextStyle(
                               fontSize: 14,
                               fontWeight: FontWeight.bold)),
