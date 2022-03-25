@@ -38,9 +38,6 @@ class ApprovedNotif extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
-              const Align(
-                alignment: Alignment.topRight,
-              ),
               Stack(
                 children: <Widget>[
                   Container(
