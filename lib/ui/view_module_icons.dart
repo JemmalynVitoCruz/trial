@@ -56,8 +56,8 @@ class ViewModuleIcons extends StatelessWidget {
                       height: 70,
                       width: 50,
                       color: Colors.grey,
-                      child: Icon(Icons.favorite, color: Colors.blue, size:30,),
-                   ),
+                      child: Icon(Icons.border_color, color: Colors.black, size:30,),
+                    ),
                   ),
                   Positioned(
                     right: 0, top: 60,
@@ -65,7 +65,7 @@ class ViewModuleIcons extends StatelessWidget {
                       height: 70,
                       width: 50,
                       color: Colors.grey,
-                      child: Icon(Icons.star, color: Colors.blue, size:30,),
+                      child: Icon(Icons.draw, color: Colors.black, size:30,),
                     ),
                   ),
                   Positioned(
@@ -74,7 +74,7 @@ class ViewModuleIcons extends StatelessWidget {
                       height: 70,
                       width: 50,
                       color: Colors.grey,
-                      child: Icon(Icons.person, color: Colors.blue, size:30,),
+                      child: Icon(Icons.comment, color: Colors.black, size:30,),
                     ),
                   ),
                 ],
