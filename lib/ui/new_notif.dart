@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class NewNotif extends StatelessWidget {
+class NewNotification extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +11,7 @@ class NewNotif extends StatelessWidget {
           icon: Icon(Icons.arrow_back, color: Colors.white),
           onPressed: () => Navigator.of(context).pop(),
         ),
-        title: Text('DRRR Module 1. pdf', style: TextStyle(fontStyle: FontStyle.normal),),
+        title: Text('DRRR Module 2. pdf', style: TextStyle(fontStyle: FontStyle.normal),),
         actions: <Widget>[
           Padding(
             padding: EdgeInsets.only(right: 20.0),
@@ -25,6 +25,18 @@ class NewNotif extends StatelessWidget {
             child: Icon(
               IconData(0xf8dc, fontFamily: 'MaterialIcons'),
             ),
+          ),
+          Container(
+            decoration: new BoxDecoration(color: Colors.red, borderRadius: BorderRadius.circular(7),),
+              constraints: BoxConstraints(
+                minWidth: 10,
+                minHeight: 10,
+            ),
+              child: Container(
+                width: 1,
+                height: 1,
+            ),
+
           ),
         ],
       ),
