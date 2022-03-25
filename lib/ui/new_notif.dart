@@ -23,11 +23,6 @@ class NewNotification extends StatelessWidget {
                 children: const <Widget>[
                   Icon(Icons.notifications,
                     color: Colors.white,),
-                    Positioned(
-                      child: Icon(Icons.brightness_1,
-                      color: Colors.red,
-                      size: 9.0,),
-                    ),
               ],
           ),
         )
@@ -65,7 +60,15 @@ class NewNotification extends StatelessWidget {
                     child: Container(
                         height: 50,
                         width: 200,
-                        color: Colors.grey,
+                        //color: Colors.grey,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.rectangle,
+                          color: Colors.brown[100],
+                          border: Border.all(
+                            color: Colors.brown,
+                            width:2,
+                          ),
+                        ),
                         alignment: Alignment.topLeft,
                         child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
@@ -98,8 +101,16 @@ class NewNotification extends StatelessWidget {
                     child: Container(
                       height: 50,
                       width: 200,
-                      color: Colors.grey,
+                      //color: Colors.grey,
                       alignment: Alignment.topLeft,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.rectangle,
+                          color: Colors.grey,
+                          border: Border.all(
+                            color: Colors.brown,
+                            width:2,
+                          ),
+                        ),
                         child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: const <Widget>[
