@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:trial/ui/approved_notif.dart';
 import 'package:trial/ui/new_notif.dart';
 import 'package:trial/ui/select_file.dart';
 import 'package:trial/ui/view_module.dart';
@@ -25,6 +26,7 @@ void main(){
         //home: LocalFiles(),
         //home: SelectFile(),
         //home: NewNotification(),
+        home: ApprovedNotif(),
       )
   );
 }
