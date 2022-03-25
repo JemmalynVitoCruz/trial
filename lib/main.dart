@@ -14,7 +14,7 @@ void main(){
       MaterialApp(
         color: Colors.red,
         title: "My First Flutter App",
-        //home: LoginScreen(),
+        home: LoginScreen(),
         //home: CreateAcc(),
         //home: SelectMethod(),
         //home: DeviceUpload(),
@@ -23,7 +23,7 @@ void main(){
         //home: ViewModule(),
         //home: LocalFiles(),
         //home: SelectFile(),
-        home: NewNotif(),
+        //home: NewNotif(),
       )
   );
 }
