@@ -11,14 +11,20 @@ class ApprovedNotif extends StatelessWidget {
           icon: Icon(Icons.arrow_back, color: Colors.white),
           onPressed: () => Navigator.of(context).pop(),
         ),
-        title: Text('DRRR Module 2. pdf', style: TextStyle(fontStyle: FontStyle.normal),),
+        title: Text('DRRR Module 1. pdf', style: TextStyle(fontStyle: FontStyle.normal),),
         actions: <Widget>[
-          Padding(
-            padding: EdgeInsets.only(right: 20.0),
-            child: Icon(
-              Icons.notifications,
-              size: 26.0,
-            ),
+          Row(
+            children: <Widget> [
+              IconButton(
+                onPressed: () => Navigator.of(context).pop(),
+                icon: Stack(
+                  children: <Widget>[
+                    Icon(Icons.notifications,
+                      color: Colors.white,),
+                  ],
+                ),
+              )
+            ],
           ),
           Padding(
             padding: EdgeInsets.only(right: 20.0),
@@ -28,31 +34,51 @@ class ApprovedNotif extends StatelessWidget {
           ),
         ],
       ),
-
-      body: Padding (
-        padding: EdgeInsets.all(15),
-        child: ListView (
-          children: <Widget>[
-            SizedBox(height: 10),
-            Container (
-              height: 30, width: 30,
-              color: Colors.brown[900],
-              child: Text("1/20", style: TextStyle(fontSize: 15, color: Colors.white)),
-            ),
-            Container(
-              height: 555,
-              width:700,
-              alignment: Alignment.topLeft,
-              decoration: BoxDecoration(
-                color: Colors.black,
-                image: DecorationImage(
-                  image: ExactAssetImage('images/module_sample1.png',  scale: 1.0),
-                  fit: BoxFit.fitHeight,
-                ),
+      body: SingleChildScrollView (
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: <Widget>[
+              Stack(
+                children: <Widget>[
+                  Container(
+                      decoration:  const BoxDecoration(color: Colors.white),
+                      child: Image.asset('images/module1a.jpg',fit: BoxFit.fill)
+                  ),
+                  Positioned(
+                    right: 0, top: 0,
+                    child: Container(
+                      height: 70,
+                      width: 50,
+                      color: Colors.grey,
+                      child: Icon(Icons.border_color, color: Colors.black, size:30,),
+                    ),
+                  ),
+                  Positioned(
+                    right: 0, top: 60,
+                    child: Container(
+                      height: 70,
+                      width: 50,
+                      color: Colors.grey,
+                      child: Icon(Icons.draw, color: Colors.black, size:30,),
+                    ),
+                  ),
+                  Positioned(
+                    right: 0, top: 120,
+                    child: Container(
+                      height: 70,
+                      width: 50,
+                      color: Colors.grey,
+                      child: Icon(Icons.comment, color: Colors.black, size:30,),
+                    ),
+                  ),
+                ],
               ),
-            ),
-          ],
-        ),
+              Container(
+                  decoration: const BoxDecoration(color: Colors.white),
+                  child: Image.asset('images/module1b.jpg',fit: BoxFit.fill)
+              ),
+            ],
+          )
       ),
     );
   }
