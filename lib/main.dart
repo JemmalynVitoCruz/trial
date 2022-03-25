@@ -27,8 +27,8 @@ void main(){
         //home:ViewModuleIcons(),
         //home: LocalFiles(),
         //home: SelectFile(),
-        home: NewNotification(),
-        //home: ApprovedNotif(),
+        //home: NewNotification(),
+        home: ApprovedNotif(),
       )
   );
 }
