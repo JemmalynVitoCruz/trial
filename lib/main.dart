@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:trial/ui/select_file.dart';
 import 'package:trial/ui/view_module.dart';
 import './ui/login.dart';
 import 'ui/create_account.dart';
@@ -20,7 +21,8 @@ void main(){
         //home: GdriveUpload(),
         //home:ChooseFile(),
         //home: ViewModule(),
-        home: LocalFiles(),
+        //home: LocalFiles(),
+        home: SelectFile(),
       )
   );
 }
