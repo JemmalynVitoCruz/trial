@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:trial/ui/approved_notif.dart';
-import 'package:trial/ui/new_notif.dart';
 import 'package:trial/ui/select_file.dart';
 import 'package:trial/ui/view_module.dart';
 import './ui/login.dart';
@@ -16,17 +14,16 @@ void main(){
       MaterialApp(
         color: Colors.red,
         title: "My First Flutter App",
-        //home: LoginScreen(),
+        home: LoginScreen(),
         //home: CreateAcc(),
         //home: SelectMethod(),
         //home: DeviceUpload(),
-        home: GdriveUpload(),
-        //home: ChooseFile(),
+        //home: GdriveUpload(),
+        //home:ChooseFile(),
         //home: ViewModule(),
         //home: LocalFiles(),
         //home: SelectFile(),
-        //home: NewNotification(),
-        home: ApprovedNotif(),
+        //home: NewNotif(),
       )
   );
 }
