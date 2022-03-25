@@ -19,12 +19,12 @@ void main(){
         //home: CreateAcc(),
         //home: SelectMethod(),
         //home: DeviceUpload(),
-        //home: GdriveUpload(),
-        //home:ChooseFile(),
+        home: GdriveUpload(),
+        //home: ChooseFile(),
         //home: ViewModule(),
         //home: LocalFiles(),
         //home: SelectFile(),
-        home: NewNotification(),
+        //home: NewNotification(),
       )
   );
 }

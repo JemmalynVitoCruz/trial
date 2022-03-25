@@ -9,7 +9,7 @@ class LocalFiles extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.brown[400],
         leading: IconButton(
           icon: Icon(Icons.arrow_back, color: Colors.white),
           onPressed: () => Navigator.of(context).pop(),
@@ -47,7 +47,7 @@ class LocalFiles extends StatelessWidget {
                                 ),
                               ),
                               Container(
-                              child: Icon(IconData(0xf0096, fontFamily: 'MaterialIcons'), color: Colors.black, size:35,
+                              child: Icon(IconData(0xf0096, fontFamily: 'MaterialIcons'), color: Colors.brown[900], size:35,
                                 ),
                               ),
                               Padding(
@@ -56,7 +56,7 @@ class LocalFiles extends StatelessWidget {
                               ),
                               Container(
                                     alignment: Alignment.center,
-                                  child: Text('Mobile Computing Module 1', style: TextStyle(fontSize: 10)),
+                                  child: Text('Mobile Computing Module 1', style: TextStyle(fontSize: 10,color: Colors.brown[700], fontWeight: FontWeight.bold)),
                               ),
                               Padding(
                                 padding: const EdgeInsets.only(left: 0.0, right: 0.0, top: 10.0, bottom: 20.0,
@@ -65,7 +65,7 @@ class LocalFiles extends StatelessWidget {
                               Row(
                                   mainAxisAlignment: MainAxisAlignment.end,
                                   children: <Widget>[
-                                    Icon(IconData(0xf04f6, fontFamily: 'MaterialIcons'), color: Colors.black, size:25
+                                    Icon(IconData(0xf04f6, fontFamily: 'MaterialIcons'), color: Colors.brown[900], size:25
                                     ),
                                   ],
                               ),
@@ -99,7 +99,7 @@ class LocalFiles extends StatelessWidget {
                                 ),
                               ),
                               Container(
-                                child: Icon(IconData(0xf0096, fontFamily: 'MaterialIcons'), color: Colors.black, size:35,
+                                child: Icon(IconData(0xf0096, fontFamily: 'MaterialIcons'), color: Colors.brown[900], size:35,
                                 ),
                               ),
                               Padding(
@@ -108,7 +108,7 @@ class LocalFiles extends StatelessWidget {
                               ),
                               Container(
                                 alignment: Alignment.center,
-                                child: Text('Mobile Computing Module 2', style: TextStyle(fontSize: 10)),
+                                child: Text('Mobile Computing Module 2', style: TextStyle(fontSize: 10,color: Colors.brown[700], fontWeight: FontWeight.bold)),
                               ),
                               Padding(
                                 padding: const EdgeInsets.only(left: 0.0, right: 0.0, top: 10.0, bottom: 20.0,
@@ -117,7 +117,7 @@ class LocalFiles extends StatelessWidget {
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.end,
                                 children: <Widget>[
-                                  Icon(IconData(0xf04f6, fontFamily: 'MaterialIcons'), color: Colors.black, size:25
+                                  Icon(IconData(0xf04f6, fontFamily: 'MaterialIcons'), color: Colors.brown[900], size:25
                                   ),
                                 ],
                               ),
@@ -161,7 +161,7 @@ class LocalFiles extends StatelessWidget {
                                 ),
                               ),
                               Container(
-                                child: Icon(IconData(0xe3dd, fontFamily: 'MaterialIcons'), color: Colors.black, size:35,
+                                child: Icon(IconData(0xe3dd, fontFamily: 'MaterialIcons'), color: Colors.brown[900], size:35,
                                 ),
                               ),
                               Padding(
@@ -170,7 +170,7 @@ class LocalFiles extends StatelessWidget {
                               ),
                               Container(
                                 alignment: Alignment.center,
-                                child: Text('DRRR Module', style: TextStyle(fontSize: 10)),
+                                child: Text('DRRR Module', style: TextStyle(fontSize: 10,color: Colors.brown[700], fontWeight: FontWeight.bold)),
                               ),
                               Padding(
                                 padding: const EdgeInsets.only(left: 0.0, right: 0.0, top: 10.0, bottom: 20.0,
@@ -179,7 +179,7 @@ class LocalFiles extends StatelessWidget {
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.end,
                                 children: <Widget>[
-                                  Icon(IconData(0xf04f6, fontFamily: 'MaterialIcons'), color: Colors.black, size:25
+                                  Icon(IconData(0xf04f6, fontFamily: 'MaterialIcons'), color: Colors.brown[900], size:25
                                   ),
                                 ],
                               ),
@@ -213,7 +213,7 @@ class LocalFiles extends StatelessWidget {
                                 ),
                               ),
                               Container(
-                                child: Icon(IconData(0xf0096, fontFamily: 'MaterialIcons'), color: Colors.black, size:35,
+                                child: Icon(IconData(0xf0096, fontFamily: 'MaterialIcons'), color: Colors.brown[900], size:35,
                                 ),
                               ),
                               Padding(
@@ -222,7 +222,7 @@ class LocalFiles extends StatelessWidget {
                               ),
                               Container(
                                 alignment: Alignment.center,
-                                child: Text('Lecture 01 - Quality Assurance', style: TextStyle(fontSize: 10)),
+                                child: Text('Lecture 01 - Quality Assurance', style: TextStyle(fontSize: 10,color: Colors.brown[700], fontWeight: FontWeight.bold)),
                               ),
                               Padding(
                                 padding: const EdgeInsets.only(left: 0.0, right: 0.0, top: 10.0, bottom: 20.0,
@@ -231,7 +231,7 @@ class LocalFiles extends StatelessWidget {
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.end,
                                 children: <Widget>[
-                                  Icon(IconData(0xf04f6, fontFamily: 'MaterialIcons'), color: Colors.black, size:25
+                                  Icon(IconData(0xf04f6, fontFamily: 'MaterialIcons'), color: Colors.brown[900], size:25
                                   ),
                                 ],
                               ),
