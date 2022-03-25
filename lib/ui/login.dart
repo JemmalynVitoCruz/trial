@@ -28,24 +28,25 @@ class _LoginScreenState extends State<LoginScreen> {
                   padding:const  EdgeInsets.all(60),
                   decoration: const BoxDecoration(
                       image: DecorationImage(
-                        image: AssetImage('images/logo.PNG'),
+                        image: AssetImage('images/logo.png'),
                         alignment: Alignment.topCenter,
                       )
                   ),
                 ),
+                SizedBox(height: 5),
                 Container(
                     height: 80,
                     margin: const EdgeInsets.fromLTRB(25, 7, 25, 0),
-                  //width: 90,
-                  padding: const EdgeInsets.fromLTRB(25, 15, 25, 0),
-                  decoration: BoxDecoration(
-                    shape: BoxShape.rectangle,
-                    color: Colors.brown[100],
-                    border: Border.all(
-                      color: Colors.brown,
-                      width:3,
+                    //width: 90,
+                    padding: const EdgeInsets.fromLTRB(25, 15, 25, 0),
+                    decoration: BoxDecoration(
+                      shape: BoxShape.rectangle,
+                      color: Colors.brown[100],
+                      border: Border.all(
+                        color: Colors.brown,
+                        width:3,
+                      ),
                     ),
-                  ),
                     child: Column(
                       children: const [
                         Text(
@@ -57,14 +58,14 @@ class _LoginScreenState extends State<LoginScreen> {
                             fontWeight: FontWeight.w500,
                           ),
                         ),
-                          Text(
-                            'Online module reviewer',
-                            style: TextStyle(
-                              color: Colors.brown,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 10,
-                              height: 1.5,
-                            ),
+                        Text(
+                          'Online module reviewer',
+                          style: TextStyle(
+                            color: Colors.brown,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 10,
+                            height: 1.5,
+                          ),
                           textAlign: TextAlign.center,
                         )
                       ],
@@ -140,9 +141,6 @@ class _LoginScreenState extends State<LoginScreen> {
                       },
                     )
                 ),
-
-
-
               ]
           ),
         ));
