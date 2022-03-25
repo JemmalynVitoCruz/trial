@@ -8,7 +8,7 @@ class ViewModuleIcons extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.brown[400],
         leading: IconButton(
           icon: const Icon(Icons.arrow_back, color: Colors.white),
           onPressed: () => Navigator.of(context).pop(),
@@ -19,6 +19,7 @@ class ViewModuleIcons extends StatelessWidget {
             padding: EdgeInsets.only(right: 20.0),
             child: Icon(
               Icons.notifications_none_outlined,
+              //color: Colors.brown[900],
               size: 26.0,
             ),
           ),
@@ -55,8 +56,8 @@ class ViewModuleIcons extends StatelessWidget {
                     child: Container(
                       height: 70,
                       width: 50,
-                      color: Colors.grey,
-                      child: Icon(Icons.border_color, color: Colors.black, size:30,),
+                      color: Colors.brown[100],
+                      child: Icon(Icons.border_color, color: Colors.brown[900], size:30,),
                     ),
                   ),
                   Positioned(
@@ -64,8 +65,8 @@ class ViewModuleIcons extends StatelessWidget {
                     child: Container(
                       height: 70,
                       width: 50,
-                      color: Colors.grey,
-                      child: Icon(Icons.draw, color: Colors.black, size:30,),
+                      color: Colors.brown[100],
+                      child: Icon(Icons.draw, color: Colors.brown[900], size:30,),
                     ),
                   ),
                   Positioned(
@@ -73,8 +74,8 @@ class ViewModuleIcons extends StatelessWidget {
                     child: Container(
                       height: 70,
                       width: 50,
-                      color: Colors.grey,
-                      child: Icon(Icons.comment, color: Colors.black, size:30,),
+                      color: Colors.brown[100],
+                      child: Icon(Icons.comment, color: Colors.brown[900], size:30,),
                     ),
                   ),
                 ],

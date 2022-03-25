@@ -24,11 +24,11 @@ void main(){
         //home: GdriveUpload(),
         //home:ChooseFile(),
         //home: ViewModule(),
-        //home:ViewModuleIcons(),
+        home:ViewModuleIcons(),
         //home: LocalFiles(),
         //home: SelectFile(),
         //home: NewNotification(),
-        home: ApprovedNotif(),
+        //home: ApprovedNotif(),
       )
   );
 }
