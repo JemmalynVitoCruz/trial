@@ -52,7 +52,9 @@ class SelectMethod extends StatelessWidget {
                               fontWeight: FontWeight.bold)),
                       child: const Text('Upload from local files'),
                       onPressed: () {
-                        //login
+                        Navigator.of(context)
+                            .pushNamed('/localFiles',
+                            arguments: 'Local Files');
                       },
                     )
                 ),
@@ -68,7 +70,9 @@ class SelectMethod extends StatelessWidget {
                               fontWeight: FontWeight.bold)),
                       child: const Text('Upload from google drive'),
                       onPressed: () {
-                        //login
+                        Navigator.of(context)
+                            .pushNamed('/gdrive',
+                            arguments: 'Gdrive Files');
                       },
                     )
                 ),

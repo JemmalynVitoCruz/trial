@@ -20,11 +20,15 @@ class ViewModule extends StatelessWidget {
               size: 26.0,
             ),
           ),
-          Padding(
-            padding: EdgeInsets.only(right: 20.0),
-            child: Icon(
-              IconData(0xf8dc, fontFamily: 'MaterialIcons'),
+          IconButton(
+            icon: Icon(
+              Icons.more_vert,
             ),
+            onPressed: () {
+              Navigator.of(context)
+                  .pushNamed('/viewModuleIcons',
+                  arguments: 'View Module Icons');
+            },
           ),
         ],
       ),

@@ -76,8 +76,9 @@ class CreateAcc extends StatelessWidget {
                     primary: Colors.brown[900],
                   ),
                   onPressed:() {
-                    print(nameController.text);
-                    print(passwordController.text);
+                    Navigator.of(context)
+                        .pushNamed('/chooseFile',
+                        arguments: 'Choose File');
                   },
                 )
             ),

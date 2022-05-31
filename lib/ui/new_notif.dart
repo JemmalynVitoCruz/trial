@@ -13,7 +13,9 @@ class NewNotification extends StatelessWidget {
         ),
         title: Text('DRRR Module 2. pdf', style: TextStyle(fontStyle: FontStyle.normal),),
         actions: <Widget>[
-          IconButton(onPressed:() {},
+          IconButton(onPressed:() {Navigator.of(context)
+              .pushNamed('/approvedNotif',
+              arguments: 'Data from Home Page');},
             icon: Stack (
               children: <Widget>[
                 Icon(Icons.notifications,
@@ -27,11 +29,15 @@ class NewNotification extends StatelessWidget {
               ],
             ),
           ),
-          Padding(
-            padding: EdgeInsets.only(right: 20.0),
-            child: Icon(
-              IconData(0xf8dc, fontFamily: 'MaterialIcons'),
+          IconButton(
+            icon: Icon(
+              Icons.more_vert,
             ),
+            onPressed: () {
+              Navigator.of(context)
+                  .pushNamed('/viewModuleIcons',
+                  arguments: 'View Module Icons');
+            },
           ),
           Container(
             decoration: new BoxDecoration(color: Colors.brown[400], borderRadius: BorderRadius.circular(7),),

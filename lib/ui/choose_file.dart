@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ChooseFile extends StatelessWidget {
+
   TextEditingController nameController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
 
@@ -11,16 +12,16 @@ class ChooseFile extends StatelessWidget {
         backgroundColor: Colors.brown[400],
         title: Text('Choose File'),
       ),
-        body: Padding (
+      body: Padding (
         padding: const EdgeInsets.fromLTRB(0, 30, 0, 10),
-          child: ListView (
+        child: ListView (
           children: <Widget> [
-          Container(
-            height: 150, width: 100,
-            //color: Colors.black54,
-            alignment: Alignment.center,
+            Container(
+              height: 150, width: 100,
+              //color: Colors.black54,
+              alignment: Alignment.center,
               child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Container(
                     width: 150,
@@ -35,7 +36,7 @@ class ChooseFile extends StatelessWidget {
                         ),
                       ],
                     ),
-              ),
+                  ),
                   Padding(
                     padding: const EdgeInsets.only(left: 0.0, right: 50.0, top: 0.0, bottom: 0.0,
                     ),
@@ -64,8 +65,21 @@ class ChooseFile extends StatelessWidget {
                   width: 130,
                   height: 50,
                   child: Align(alignment: Alignment.center,
-                  child: Text("Local files", style: TextStyle(fontSize: 15,color: Colors.brown[700], fontWeight: FontWeight.bold),),
-                 ),
+                      child: TextButton(
+                        style: TextButton.styleFrom(
+                            primary: Colors.white,
+                            //onPrimary: Colors.brown[700],
+                            textStyle: const TextStyle(
+                                fontSize: 15,
+                                fontWeight: FontWeight.bold)),
+                        child: Text('Local Files', style: TextStyle(fontSize: 15,color: Colors.brown[700], fontWeight: FontWeight.bold)),
+                        onPressed: () {
+                          Navigator.of(context)
+                              .pushNamed('/localFiles',
+                              arguments: 'Local Files');
+                        },
+                      )
+                  ),
                 ),
                 Container(
                   width: 190,
@@ -76,13 +90,17 @@ class ChooseFile extends StatelessWidget {
                 ),
               ],
             )
-           ],
-          ),
-         ),
+          ],
+        ),
+      ),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.brown[900],
         child: Icon(Icons.add),
-        onPressed: () => debugPrint("Add Floating Button Tapped!"),
+        onPressed: () {
+          Navigator.of(context)
+              .pushNamed('/selectMethod',
+              arguments: 'Data from Home Page');
+        },
         tooltip: 'Add Button Tooltip',
       ),
     );

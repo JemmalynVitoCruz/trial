@@ -110,7 +110,9 @@ class _LoginScreenState extends State<LoginScreen> {
                               fontWeight: FontWeight.bold)),
                       child: const Text('Log In'),
                       onPressed: () {
-                        //login
+                        Navigator.of(context)
+                            .pushNamed("/chooseFile",
+                            arguments: 'Choose File');
                       },
                     )
                 ),
@@ -137,7 +139,9 @@ class _LoginScreenState extends State<LoginScreen> {
                               fontWeight: FontWeight.bold)),
                       child: const Text('Create an account'),
                       onPressed: () {
-                        //login
+                        Navigator.of(context)
+                            .pushNamed("/create",
+                            arguments: 'Create account');
                       },
                     )
                 ),

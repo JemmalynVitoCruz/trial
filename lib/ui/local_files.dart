@@ -47,7 +47,7 @@ class LocalFiles extends StatelessWidget {
                                 ),
                               ),
                               Container(
-                              child: Icon(IconData(0xf0096, fontFamily: 'MaterialIcons'), color: Colors.brown[900], size:35,
+                                child: Icon(IconData(0xf0096, fontFamily: 'MaterialIcons'), color: Colors.brown[900], size:35,
                                 ),
                               ),
                               Padding(
@@ -55,19 +55,28 @@ class LocalFiles extends StatelessWidget {
                                 ),
                               ),
                               Container(
-                                    alignment: Alignment.center,
-                                  child: Text('Mobile Computing Module 1', style: TextStyle(fontSize: 10,color: Colors.brown[700], fontWeight: FontWeight.bold)),
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.only(left: 0.0, right: 0.0, top: 10.0, bottom: 20.0,
+                                alignment: Alignment.center,
+                                child: TextButton(
+                                  style: TextButton.styleFrom(
+                                      primary: Colors.white,
+                                      //onPrimary: Colors.brown[700],
+                                      textStyle: const TextStyle(
+                                          fontSize: 15,
+                                          fontWeight: FontWeight.bold)),
+                                  child:  Text('DRRR Module', style: TextStyle(fontSize: 10,color: Colors.brown[700], fontWeight: FontWeight.bold)),
+                                  onPressed: () {
+                                    Navigator.of(context)
+                                        .pushNamed('/newNotif',
+                                        arguments: 'View Module');
+                                  },
                                 ),
                               ),
                               Row(
-                                  mainAxisAlignment: MainAxisAlignment.end,
-                                  children: <Widget>[
-                                    Icon(IconData(0xf04f6, fontFamily: 'MaterialIcons'), color: Colors.brown[900], size:25
-                                    ),
-                                  ],
+                                mainAxisAlignment: MainAxisAlignment.end,
+                                children: <Widget>[
+                                  Icon(IconData(0xf04f6, fontFamily: 'MaterialIcons'), color: Colors.brown[900], size:25
+                                  ),
+                                ],
                               ),
                             ],
                           ),
@@ -79,7 +88,7 @@ class LocalFiles extends StatelessWidget {
                     padding: const EdgeInsets.only(left: 0.0, right: 40.0, top: 10.0, bottom: 5.0,
                     ),
                   ),
-                Container(
+                  Container(
                     width: 150,
                     height: 200,
                     decoration: BoxDecoration(color: Colors.white,
@@ -108,10 +117,19 @@ class LocalFiles extends StatelessWidget {
                               ),
                               Container(
                                 alignment: Alignment.center,
-                                child: Text('Mobile Computing Module 2', style: TextStyle(fontSize: 10,color: Colors.brown[700], fontWeight: FontWeight.bold)),
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.only(left: 0.0, right: 0.0, top: 10.0, bottom: 20.0,
+                                child: TextButton(
+                                  style: TextButton.styleFrom(
+                                      primary: Colors.white,
+                                      //onPrimary: Colors.brown[700],
+                                      textStyle: const TextStyle(
+                                          fontSize: 15,
+                                          fontWeight: FontWeight.bold)),
+                                  child:  Text('Mobile Computing 1', style: TextStyle(fontSize: 10,color: Colors.brown[700], fontWeight: FontWeight.bold)),
+                                  onPressed: () {
+                                    Navigator.of(context)
+                                        .pushNamed('/newNotif',
+                                        arguments: 'View Module');
+                                  },
                                 ),
                               ),
                               Row(
@@ -170,10 +188,19 @@ class LocalFiles extends StatelessWidget {
                               ),
                               Container(
                                 alignment: Alignment.center,
-                                child: Text('DRRR Module', style: TextStyle(fontSize: 10,color: Colors.brown[700], fontWeight: FontWeight.bold)),
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.only(left: 0.0, right: 0.0, top: 10.0, bottom: 20.0,
+                                child: TextButton(
+                                  style: TextButton.styleFrom(
+                                      primary: Colors.white,
+                                      //onPrimary: Colors.brown[700],
+                                      textStyle: const TextStyle(
+                                          fontSize: 15,
+                                          fontWeight: FontWeight.bold)),
+                                  child:  Text('Mobile Computing 2', style: TextStyle(fontSize: 10,color: Colors.brown[700], fontWeight: FontWeight.bold)),
+                                  onPressed: () {
+                                    Navigator.of(context)
+                                        .pushNamed('/newNotif',
+                                        arguments: 'View Module');
+                                  },
                                 ),
                               ),
                               Row(
@@ -222,10 +249,19 @@ class LocalFiles extends StatelessWidget {
                               ),
                               Container(
                                 alignment: Alignment.center,
-                                child: Text('Lecture 01 - Quality Assurance', style: TextStyle(fontSize: 10,color: Colors.brown[700], fontWeight: FontWeight.bold)),
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.only(left: 0.0, right: 0.0, top: 10.0, bottom: 20.0,
+                                child: TextButton(
+                                  style: TextButton.styleFrom(
+                                      primary: Colors.white,
+                                      //onPrimary: Colors.brown[700],
+                                      textStyle: const TextStyle(
+                                          fontSize: 15,
+                                          fontWeight: FontWeight.bold)),
+                                  child:  Text('Lecture 01 Quality Assurance', style: TextStyle(fontSize: 10,color: Colors.brown[700], fontWeight: FontWeight.bold)),
+                                  onPressed: () {
+                                    Navigator.of(context)
+                                        .pushNamed('/newNotif',
+                                        arguments: 'View Module');
+                                  },
                                 ),
                               ),
                               Row(
